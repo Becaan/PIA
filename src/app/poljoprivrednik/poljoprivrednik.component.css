@@ -1,0 +1,53 @@
+:host
+{
+    display: block;
+    margin-top: 1rem;
+}
+.poruka
+{
+    text-align: center;
+    font-size: large;
+}
+
+p{
+    text-align: right;
+    font-size: large;
+}
+
+div {
+    width: 30px;
+    height: 30px;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+  }
+
+  
+  .grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    text-align: center;
+  }
+
+  table, th, td {
+    border: 1px solid black;
+  }
+
+  th, td
+  {
+    width: 25px;
+    height: 25px;
+    text-align: center;
+  }
+
+  expansion-panel-body{
+    height: 100%;
+  }
+
+  .spacer {
+    flex:1 1 auto;
+  }
+
+

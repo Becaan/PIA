@@ -1,0 +1,37 @@
+<mat-accordion multi='true' *ngIf='rasadnici.length > 0'>
+    <mat-expansion-panel *ngFor='let rasadnik of rasadnici'>
+        <mat-expansion-panel-header >
+            {{rasadnik.naziv}}, Mesto:{{rasadnik.mesto}}, zasadjene sadnice:{{rasadnik.zasadjeneSadnice}},
+            Slobodna mesta:{{rasadnik.slobodnaMesta}}, voda:{{rasadnik.voda}}, temperatira:{{rasadnik.temperatura}}
+        </mat-expansion-panel-header>
+        
+        <div>
+            <table class="table">
+                  <tr *ngFor="let col of rasadnik.rowArray; index as i">
+                    <td *ngFor="let col of rasadnik.colArray; index as j">{{i*rasadnik.colArray.length+j+1}}</td>
+                  </tr>
+              </table>
+        </div>
+
+        <p>
+            Trenutna kolicina vode (u litrima): {{rasadnik.temperatura}} <br>
+            Trenutrna temperatura (u Celzijusima): {{rasadnik.voda}}
+        </p>
+        <span *ngFor='let i of rasadnik.rowArray'> 
+            <br>
+            <span *ngIf='i % 2 ==0'>
+                <br>
+            </span> 
+        </span>
+        <mat-action-row>
+            <button mat-raised-button >Dodaj vodu</button>
+            <button mat-raised-button >Oduzmi vodu</button>
+            <button mat-raised-button >Dodaj temperaturu</button>
+            <button mat-raised-button >Oduzmi temperaturu</button>
+            <span class="spacer"></span>
+            <button mat-raised-button color="warn" (click)="obrisi(rasadnik._id)">OBRISI</button>
+        </mat-action-row>
+        
+    </mat-expansion-panel>
+</mat-accordion>
+<p class='poruka' *ngIf='rasadnici.length == 0'>Nemate ni jedan rasadnik</p>

@@ -1,0 +1,18 @@
+<mat-toolbar color='primary'>
+    <span *ngIf="!userIsAuthenticated">
+        <a routerLink="">Login</a> &nbsp; &nbsp;| &nbsp; &nbsp;
+        <a routerLink="register">Register</a>
+    </span>
+    <span *ngIf="userIsAuthenticated">
+        <button mat-button (click)="onLogout()">Logout</button>
+    </span>
+    <span class="spacer"></span>
+    <span *ngIf="userIsAuthenticated">
+        <a routerLink="poljoprivrednik">Home</a> &nbsp; &nbsp;| &nbsp; &nbsp;
+        <a routerLink="poljoprivrednik/dodajRasadnik">Dodaj Rasadnik</a>
+    </span>
+    <!--TREBA JOS JEDAN ROUTERLINK ZA PREDUZECE I ZA ADMINA-->
+    
+</mat-toolbar>
+
+

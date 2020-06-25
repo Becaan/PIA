@@ -1,0 +1,25 @@
+.poruka{
+    color: red;
+    font-size: large;
+}
+
+.karta{
+    width: 50%;
+    text-align: center;
+    margin: auto;
+    font-size: large;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+
+  td{
+    font-size: large;
+  }
+
+  span{
+      margin-top: 1rem;
+    display: flex;
+    align-items: center;
+  justify-content: center;
+  }

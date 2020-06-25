@@ -1,0 +1,15 @@
+<mat-card class='karta'>
+    <table *ngIf="tip!=1 && tip !=2">
+        <tr>
+            <td>
+                Registracija za :
+            </td>
+        </tr>
+        <td>
+            <button mat-raised-button color='primary' (click)="odrediTip(1)">Poljoprivrednik</button>
+        </td>
+        <td>
+            <button mat-raised-button color='primary' (click)="odrediTip(2)">Preduzece</button>
+        </td>
+    </table>
+</mat-card>

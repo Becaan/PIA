@@ -1,0 +1,48 @@
+
+    <form (submit)="napraviRasadnik(postForm)" #postForm="ngForm">
+        <mat-card class='karta'>
+        <table>
+            <tr>
+                <td>
+                    Naziv:
+                </td>
+                <td>
+                    <input type="text" name='naziv' [(ngModel)] = 'naziv' required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Mesto:
+                </td>
+                <td>
+                    <input type="text" name='mesto' [(ngModel)] = 'mesto' required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Duzina rasadnika (u metrima):
+                </td>
+                <td>
+                    <input type="text" name='duzina' [(ngModel)] = 'duzina' required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Sirina rasadnika (u metrima):
+                </td>
+                <td>
+                    <input type="text" name='sirina' [(ngModel)] = 'sirina' required >
+                </td>
+            </tr>
+            </table>
+    </mat-card>
+    <span>
+        <button mat-raised-button color='primary' type="submit">Potvrdi</button>
+    </span>
+</form>
+
+<span>
+    <div class="poruka">
+        {{poruka}}
+    </div>
+</span>

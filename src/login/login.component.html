@@ -1,0 +1,20 @@
+<mat-card class='karta' style="text-align: center;">
+    <mat-card-title>
+		Login
+	</mat-card-title>
+    <mat-form-field>
+        <input matInput placeholder="Korisnicko ime" [(ngModel)]="korisnickoIme">
+    </mat-form-field><br>
+
+    <mat-form-field>
+        <input matInput type="password" placeholder="loznika" [(ngModel)]="lozinka">
+    </mat-form-field><br>
+        <input type="radio" name="tip" value="1" [(ngModel)]="tip">Poljoprivrednik <br>
+        <input type="radio" name="tip" value="2" [(ngModel)]="tip">Preduzece<br>
+        <input type="radio" name="tip" value="3" [(ngModel)]="tip">Admin <br><br>
+    <button mat-raised-button color='primary' (click)="potvrdi()">Potvrdi</button>
+</mat-card>
+
+
+
+

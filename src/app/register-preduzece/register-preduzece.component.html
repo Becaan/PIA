@@ -1,0 +1,78 @@
+<mat-card class='karta'>
+    <table>
+        <tr>
+            <td>
+                Naziv Preduzeca:
+            </td>
+            <td>
+                <input type="text" name='naziv' [(ngModel)] = 'nazivPreduzeca'>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Skraceni Naziv:
+            </td>
+            <td>
+                <input type="text" name='skraceniNaziv' [(ngModel)] = 'skraceniNazivPreduzeca'>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Korisnicko ime:
+            </td>
+            <td>
+                <input type="text" name='korisnickoIme' [(ngModel)] = 'korisnickoIme'>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                E-mail:
+            </td>
+            <td>
+                <input type="text" name='email' [(ngModel)] = 'email'>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Lozinka:
+            </td>
+            <td>
+                <input type="password" name='lozinka' [(ngModel)] = 'lozinka'>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Potvrda Lozinke:
+            </td>
+            <td>
+                <input type="password" name='lozinka2' [(ngModel)] = 'lozinka2'>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Datum osnivanja:
+            </td>
+            <td>
+                <input type="date" name='datumOsnivanja' [(ngModel)] = 'datumOsnivanjaPreduzeca'>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Mesto preduzeca:
+            </td>
+            <td>
+                <input type="text" name='mesto' [(ngModel)] = 'mestoPreduzeca'>
+            </td>
+        </tr>
+    </table>
+</mat-card>
+
+<span>
+    <button mat-raised-button color='primary' (click)="registracija()">Potvrdi</button>
+</span>
+
+<span>
+    <div class="poruka">
+        {{poruka}}
+    </div>
+</span>

@@ -1,0 +1,86 @@
+<mat-card class='karta'>
+    <table>
+        <tr>
+            <td>
+                Ime:
+            </td>
+            <td>
+                <input type="text" name='ime' [(ngModel)] = 'ime'>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Prezime:
+            </td>
+            <td>
+                <input type="text" name='prezime' [(ngModel)] = 'prezime'>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Korisnicko ime:
+            </td>
+            <td>
+                <input type="text" name='korisnickoIme' [(ngModel)] = 'korisnickoIme'>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Lozinka:
+            </td>
+            <td>
+                <input type="password" name='lozinka' [(ngModel)] = 'lozinka' >
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Potvrda Lozinke:
+            </td>
+            <td>
+                <input type="password" name='lozinka2' [(ngModel)] = 'lozinka2'>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Datum rodjenja:
+            </td>
+            <td>
+                <input type="date" name='datumRodjenja' [(ngModel)] = 'datumRodjenja'>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Mesto rodjenja:
+            </td>
+            <td>
+                <input type="text" name='mestoRodjenja' [(ngModel)] = 'mestoRodjenja'>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Kontakt telefon:
+            </td>
+            <td>
+                <input type="text" name='telefon' [(ngModel)] = 'kontakt'>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                E-mail:
+            </td>
+            <td>
+                <input type="text" name='email' [(ngModel)] = 'email'>
+            </td>
+        </tr>
+        </table>
+</mat-card>
+<span>
+    <button mat-raised-button color='primary' (click)="registracija()">Potvrdi</button>
+</span>
+
+<span>
+    <div class="poruka">
+        {{poruka}}
+    </div>
+</span>
+    
